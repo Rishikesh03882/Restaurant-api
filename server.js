@@ -7,10 +7,11 @@ const app = express();
 
 // ✅ CORS setup to allow frontend domain
 app.use(cors({
-  origin: 'https://restaurant-ui-sand.vercel.app', // allow your frontend
+  origin: 'https://restaurant-ui-brown.vercel.app', // allow your frontend
   methods: ['GET', 'POST'],                         // optional: restrict methods
   credentials: true                                 // optional: if you're using cookies/auth
 }));
+
 
 app.use(express.json()); // To parse JSON data
 
